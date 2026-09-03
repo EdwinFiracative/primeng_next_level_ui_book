@@ -48,13 +48,14 @@ import { RadioButtonModule } from 'primeng/radiobutton'
 
       <div class="form-group">
         <label>Gender</label>
+        @for (gender of genders; track gender.value) {
         <p-radioButton
-          *ngFor="let gender of genders"
           name="gender"
-          value="{{ gender.value }}"
-          label="{{ gender.name }}"
+          [value]="gender.value"
+          [label]="gender.name"
           formControlName="gender"
         />
+        }
       </div>
 
       <button pButton type="submit">Submit</button>

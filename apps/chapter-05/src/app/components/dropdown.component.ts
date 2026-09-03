@@ -29,6 +29,7 @@ import { DropdownModule } from 'primeng/dropdown'
           [options]="cities"
           ngModel
           optionLabel="name"
+          filterBy="name"
           name="cityWithFilter"
           [filter]="true"
           aria-labelledby="dd2"

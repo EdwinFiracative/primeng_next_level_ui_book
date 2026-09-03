@@ -19,6 +19,7 @@ import {
 
     <primengbook-button-configuration />
     <primengbook-button-override-styles />
+
   `,
   imports: [
     ButtonModule,
