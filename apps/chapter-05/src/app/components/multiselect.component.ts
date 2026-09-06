@@ -18,7 +18,10 @@ import { MultiSelectModule } from 'primeng/multiselect'
           ngModel
           optionLabel="name"
           name="city"
+          placeholder="Select a City"
           aria-labelledby="dd1"
+          [style]="{ width: '18rem' }"
+          [filter]="true"
         />
       </div>
 
@@ -29,7 +32,7 @@ import { MultiSelectModule } from 'primeng/multiselect'
           [group]="true"
           ngModel
           name="cityWithGroup"
-          defaultLabel="Select a City"
+          placeholder="Select a City"
           aria-labelledby="dd2"
         >
           <ng-template let-group pTemplate="group">
@@ -46,7 +49,7 @@ import { MultiSelectModule } from 'primeng/multiselect'
         <p-multiSelect
           [options]="cities"
           ngModel
-          defaultLabel="Select a Country"
+          placeholder="Select a Country"
           name="cityWithTemplating"
           optionLabel="name"
           aria-labelledby="dd3"
